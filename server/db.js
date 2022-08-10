@@ -19,9 +19,3 @@ db.on('error', ()=>{
 
 module.exports = mongoose
 
-// const connection_url = 'mongodb+srv://krishshah123:thejungleking@cluster0.zy4gtar.mongodb.net/Whatsapp_CDB'
-// mongoose.connect(connection_url,{
-//     // useCreateIndex: true,
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// })
