@@ -1,7 +1,7 @@
 const  mongoose  = require("mongoose");
 
-var mongoURL = process.env.DB || 'mongodb+srv://krishshah123:thejungleking@cluster0.zy4gtar.mongodb.net/Whatsapp_CDB'
-// var mongoURL ='mongodb+srv://krishshah123:thejungleking@cluster0.hnajr.mongodb.net/intern'
+var mongoURL = process.env.DB 
+
 
 
 mongoose.connect(mongoURL, {useUnifiedTopology: true, useNewUrlParser: true})
