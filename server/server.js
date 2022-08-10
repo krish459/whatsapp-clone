@@ -1,4 +1,5 @@
 // importing
+require('dotenv').config()
 const express =require("express")
 const messageRoute = require('./routes/messageRoute.js')
 const db = require("./db");
@@ -11,10 +12,11 @@ const app = express()
 const port = process.env.PORT || 9000
 
 const pusher = new Pusher({
-    appId: "1460158",
-    key: "bc6552dfe5963e79ecc0",
-    secret: "d91f7cd6f19973af9aa8",
-    cluster: "ap2",
+    
+    appId: process.env.APPID,
+    key: process.env.KEY,
+    secret: process.env.SECRET,
+    cluster: process.env.CLUSTER,
     useTLS: true
   });
 
